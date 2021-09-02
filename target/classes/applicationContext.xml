@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC 
+	"-//SPRING//DTD BEAN//EN" 
+	"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="resource" class="com.jadson.dev.tarefas.view.actions.ResourceAction" singleton="false">       
+    </bean>
+	<bean id="project" class="com.jadson.dev.tarefas.view.actions.ProjectAction" singleton="false">
+        <property name="repository" ref="projectRepository"/>
+    </bean>
+
+	<bean id="user" class="com.jadson.dev.tarefas.actions.UserAction" singleton="false">
+		<property name="repository" ref="userRepository"/>
+	</bean>
+	
+	<bean id="userRepository" class="com.jadson.dev.tarefas.infrastructure.UserDecorator">
+		<property name="dao">
+			<bean name="GenericJPADAO" class="com.jadson.dev.tarefas.infrastructure.dao.GenericJPADAO">
+               <constructor-arg value="com.jadson.dev.tarefas.domain.User"/>
+           </bean>
+		</property>
+	</bean>
+	
+	<bean id="projectRepository" class="com.jadson.dev.tarefas.infrastructure.ProjectDecorator">
+		<property name="projectDao">
+			<bean name="GenericJPADAO" class="com.jadson.dev.tarefas.infrastructure.dao.GenericJPADAO">
+               <constructor-arg value="com.jadson.dev.tarefas.domain.Project"/>
+           </bean>
+		</property>
+		<property name="iterationDao">
+			<bean name="GenericJPADAO" class="com.jadson.dev.tarefas.infrastructure.dao.GenericJPADAO">
+               <constructor-arg value="com.jadson.dev.tarefas.domain.Iteration"/>
+           </bean>
+		</property>
+		<property name="itemDao">
+			<bean name="GenericJPADAO" class="com.jadson.dev.tarefas.infrastructure.dao.GenericJPADAO">
+               <constructor-arg value="com.jadson.dev.tarefas.domain.Item"/>
+           </bean>
+		</property>
+		<property name="taskDao">
+			<bean name="GenericJPADAO" class="com.jadson.dev.tarefas.infrastructure.dao.GenericJPADAO">
+               <constructor-arg value="com.jadson.dev.tarefas.domain.Task"/>
+           </bean>
+		</property>
+	</bean>
+</beans>
