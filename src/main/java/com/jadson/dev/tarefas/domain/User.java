@@ -18,21 +18,14 @@ import javax.persistence.Table;
 import com.jadson.dev.tarefas.domain.enuns.UserRole;
 
 @Entity
-@Table(schema = "tarefa")
+@Table(schema = "tarefas")
 @NamedQueries( { @NamedQuery(name = "User.getByLogin", query = "SELECT u FROM User u WHERE u.login = :login and u.password = :password") })
 public class User implements Serializable {
 
 
 	private static final long serialVersionUID = -8981691270413010415L;
-
 	
-	/*
-	 * @SequenceGenerator(name = "USER_GENERATOR", sequenceName = "resource_id_seq",
-	 * initialValue = 1, allocationSize = 1)
-	 * 
-	 * @GeneratedValue(strategy = GenerationType.IDENTITY, generator =
-	 * "USER_GENERATOR")
-	 */
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;

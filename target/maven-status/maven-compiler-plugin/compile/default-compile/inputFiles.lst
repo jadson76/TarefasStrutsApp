@@ -7,11 +7,9 @@ C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\do
 C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\infrastructure\dao\GenericJPADAO.java
 C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\repository\ProjectRepository.java
 C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\domain\Project.java
-C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\view\actions\ResourceAction.java
 C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\view\actions\ProjectAction.java
 C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\domain\enuns\UserRole.java
 C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\domain\User.java
-C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\model\Resource.java
 C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\domain\Address.java
 C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\repository\UserRepository.java
 C:\Users\bioja\eclipse-workspace\tarefas\src\main\java\com\jadson\dev\tarefas\view\actions\LoginAction.java

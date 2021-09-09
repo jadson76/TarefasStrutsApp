@@ -8,17 +8,17 @@
     <constant name="struts.devMode" value="true"/>
     <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
 
-    <package name="tarefasDefault" extends="struts-default">      
+   <!--  <package name="tarefasDefault" extends="struts-default">      
         <action name="login" class="com.jadson.dev.tarefas.LoginAction">
             <result>/WEB-INF/jsp/login.jsp</result>
         </action>
-     </package>
+     </package> -->
      
-     <package name="model" extends="struts-default" namespace="/model">
-     	<action name="resource!*" method="{1}" class="resource">
-     		<result name="input">/jsp/login.jsp</result>
-     		<result name="loged">/jsp/home.jsp</result>
-     	</action>     
+     <package name="model" extends="struts-default" namespace="/admin">     	
+     	<action name="user!*" method="{1}" class="user">
+			<result name="input">/jsp/login.jsp</result>
+			<result name="logged">/jsp/home.jsp</result>
+		</action>     
      </package>
 
 </struts>

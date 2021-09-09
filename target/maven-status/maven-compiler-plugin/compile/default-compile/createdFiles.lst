@@ -2,9 +2,11 @@ com\jadson\dev\tarefas\view\actions\UserAction.class
 com\jadson\dev\tarefas\repository\ProjectRepository.class
 com\jadson\dev\tarefas\infrastructure\ProjectDecorator.class
 com\jadson\dev\tarefas\domain\Project.class
+com\jadson\dev\tarefas\view\actions\LoginAction.class
 com\jadson\dev\tarefas\domain\Task.class
 com\jadson\dev\tarefas\domain\enuns\Status.class
 com\jadson\dev\tarefas\view\actions\ProjectAction.class
+com\jadson\dev\tarefas\converters\DateConverter.class
 com\jadson\dev\tarefas\domain\Iteration.class
 com\jadson\dev\tarefas\infrastructure\UserDecorator.class
 com\jadson\dev\tarefas\domain\User.class

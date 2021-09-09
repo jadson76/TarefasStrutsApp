@@ -3,13 +3,12 @@
 	"-//SPRING//DTD BEAN//EN" 
 	"http://www.springframework.org/dtd/spring-beans.dtd">
 <beans>
-	<bean id="resource" class="com.jadson.dev.tarefas.view.actions.ResourceAction" singleton="false">       
-    </bean>
+	
 	<bean id="project" class="com.jadson.dev.tarefas.view.actions.ProjectAction" singleton="false">
         <property name="repository" ref="projectRepository"/>
     </bean>
 
-	<bean id="user" class="com.jadson.dev.tarefas.actions.UserAction" singleton="false">
+	<bean id="user" class="com.jadson.dev.tarefas.view.actions.UserAction" singleton="false">
 		<property name="repository" ref="userRepository"/>
 	</bean>
 	
