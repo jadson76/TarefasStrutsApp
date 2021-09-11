@@ -9,6 +9,6 @@
 	<title>Pagina Inicial</title>	
 </head>
 <body>
-	Bem-vindo!!!<s:property value="id"/><br>
+	Bem-vindo!!!<s:property value="name"/><br>
 </body>
 </html>

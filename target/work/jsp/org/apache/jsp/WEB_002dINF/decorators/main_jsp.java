@@ -112,8 +112,9 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            \n");
       out.write("            \n");
       out.write("            <div id=\"local\">\n");
+      out.write("             <!--\n");
       out.write("                <h3>Local Nav. Bar</h3>\n");
-      out.write("            <!--     <ul>\n");
+      out.write("                <ul>\n");
       out.write("                    <li><a href=\"#\">Content page 1</a></li>\n");
       out.write("                    <li><a href=\"#\">Content page 2</a></li>\n");
       out.write("                    <li><a href=\"#\">Content page 3</a></li>\n");
@@ -139,7 +140,7 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </div>\n");
       out.write("        \n");
       out.write("        <div id=\"footer\" class=\"clearfix\">\n");
-      out.write("            Cpyright 2021 - Jadson Dev\n");
+      out.write("            Copyright 2021 - Jadson Dev\n");
       out.write("        </div>\n");
       out.write("        \n");
       out.write("    </div>\n");

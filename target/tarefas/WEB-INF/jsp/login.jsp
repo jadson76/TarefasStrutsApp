@@ -10,9 +10,9 @@
 	<s:head />
 </head>
 <body>
-	<s:form action="resource!signIn">
-		<s:textfield label="Id do Usuario" name="j_username" />
-		<s:password label="Password" name="j_password" />
+	<s:form action="user!signIn" namespace="/model">
+		<s:textfield label="Id do Usuario" name="id" />
+		<s:password label="Password" name="password" />
 		<s:submit />
 	</s:form>
 </body>

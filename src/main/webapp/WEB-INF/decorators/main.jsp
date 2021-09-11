@@ -29,8 +29,9 @@
             
             
             <div id="local">
+             <!--
                 <h3>Local Nav. Bar</h3>
-            <!--     <ul>
+                <ul>
                     <li><a href="#">Content page 1</a></li>
                     <li><a href="#">Content page 2</a></li>
                     <li><a href="#">Content page 3</a></li>
@@ -56,7 +57,7 @@
         </div>
         
         <div id="footer" class="clearfix">
-            Cpyright 2021 - Jadson Dev
+            Copyright 2021 - Jadson Dev
         </div>
         
     </div>

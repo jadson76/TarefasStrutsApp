@@ -11,8 +11,7 @@ public class UserAction extends ActionSupport implements ModelDriven {
 	private UserRepository repository;
 	private User user;
 
-	// Este loco de codigo será executado no construtor logo após a chamada de
-	// super().
+	
 	{
 		user = user == null ? new User() : user;
 	}
@@ -20,13 +19,13 @@ public class UserAction extends ActionSupport implements ModelDriven {
 	public String signIn(){
 		
 		if(!user.isElegibleForLogin()){
-			addFieldError("login", "Please, type a login!");
+			addFieldError("login", "Por favor, entre com o Login!");
 			return INPUT;
 		}
 		
 		user = repository.userWithLogin(user.getLogin(), user.getPassword());
 		if(user == null){
-			addFieldError("login", "User Not Found!");
+			addFieldError("login", "Usuario n�o encontrado!");
 			return INPUT;
 		}
 		

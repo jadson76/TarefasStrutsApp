@@ -28,8 +28,8 @@
     </bean>
 
 	<bean id="userExample" class="com.jadson.dev.tarefas.domain.User" singleton="false">
-        <property name="name" value="Usuário"/>
-        <property name="login" value="loginUser1"/>
+        <property name="name" value="Usuário3"/>
+        <property name="login" value="loginUser3"/>
         <property name="password" value="password"/>
         <property name="role" value="ADMIN"/>
         <property name="address" ref="addressExample"/>
