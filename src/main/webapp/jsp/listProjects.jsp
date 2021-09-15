@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Projects</title>
+<title>Projetos</title>
 </head>
 <body>
 <div style="padding: 10px; padding-left: 20px;">

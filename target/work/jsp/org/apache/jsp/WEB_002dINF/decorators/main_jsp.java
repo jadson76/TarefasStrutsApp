@@ -66,89 +66,109 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_resourceInjector.setContext(application);
       }
 
-      out.write("<!DOCTYPE html PUBLIC \n");
-      out.write("\t\"-//W3C//DTD XHTML 1.1 Transitional//EN\"\n");
-      out.write("\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n");
-      out.write("<head>\n");
+      out.write("<!DOCTYPE html PUBLIC \r\n");
+      out.write("\t\"-//W3C//DTD XHTML 1.1 Transitional//EN\"\r\n");
+      out.write("\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<html lang=\"en\">\r\n");
+      out.write("<head>\r\n");
       out.write("\t<title>");
       if (_jspx_meth_decorator_title_0(_jspx_page_context))
         return;
-      out.write("</title>\n");
+      out.write("</title>\r\n");
+      out.write("\t\r\n");
       out.write("    <link href=\"");
       if (_jspx_meth_s_url_0(_jspx_page_context))
         return;
-      out.write("\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>\n");
+      out.write("\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>\r\n");
+      out.write("    \r\n");
+      out.write("    <link href=\"");
+      if (_jspx_meth_s_url_1(_jspx_page_context))
+        return;
+      out.write("\" rel=\"stylesheet\" type=\"text/css\"/>\r\n");
+      out.write("    <link href=\"");
+      if (_jspx_meth_s_url_2(_jspx_page_context))
+        return;
+      out.write("\" rel=\"stylesheet\" type=\"text/css\" media=\"print\"/>\r\n");
+      out.write("    <script language=\"JavaScript\" type=\"text/javascript\" src=\"");
+      if (_jspx_meth_s_url_3(_jspx_page_context))
+        return;
+      out.write("\"></script>\r\n");
+      out.write("\t<script language=\"JavaScript\" type=\"text/javascript\">\r\n");
+      out.write("        window.onload = function(){\r\n");
+      out.write("            if(!NiftyCheck()) {\r\n");
+      out.write("                return;\r\n");
+      out.write("            }\r\n");
+      out.write("            // perform niftycorners rounding\r\n");
+      out.write("            // eg.\r\n");
+      out.write("            // Rounded(\"blockquote\",\"tr bl\",\"#ECF1F9\",\"#CDFFAA\",\"smooth border #88D84F\");\r\n");
+      out.write("        }\r\n");
+      out.write("    </script>\r\n");
       out.write("    ");
       if (_jspx_meth_decorator_head_0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("</head>\n");
-      out.write("<body id=\"page-home\">\n");
-      out.write("    <div id=\"page\">\n");
-      out.write("        <div id=\"header\" class=\"clearfix\">\n");
-      out.write("        \tCONTROLE DE TAREFAS\n");
-      out.write("            <hr />\n");
-      out.write("        </div>\n");
-      out.write("        \n");
-      out.write("        <div id=\"content\" class=\"clearfix\">\n");
-      out.write("            <div id=\"main\">\n");
+      out.write("\r\n");
+      out.write("</head>\r\n");
+      out.write("<body id=\"page-home\">\r\n");
+      out.write("    <div id=\"page\">\r\n");
+      out.write("        <div id=\"header\" class=\"clearfix\">\r\n");
+      out.write("        \tTAREFAS - Task Control System\r\n");
+      out.write("            <hr />\r\n");
+      out.write("        </div>\r\n");
+      out.write("        \r\n");
+      out.write("        <div id=\"content\" class=\"clearfix\">\r\n");
+      out.write("            <div id=\"main\">\r\n");
       out.write("            \t<h3>");
       if (_jspx_meth_decorator_title_1(_jspx_page_context))
         return;
-      out.write("</h3>\n");
+      out.write("</h3>\r\n");
       out.write("            \t");
       if (_jspx_meth_decorator_body_0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("                <hr />\n");
-      out.write("            </div>           \n");
-      out.write("            \n");
-      out.write("            \n");
-      out.write("            <div id=\"local\">\n");
-      out.write("             <!--\n");
-      out.write("                <h3>Local Nav. Bar</h3>\n");
-      out.write("                <ul>\n");
-      out.write("                    <li><a href=\"#\">Content page 1</a></li>\n");
-      out.write("                    <li><a href=\"#\">Content page 2</a></li>\n");
-      out.write("                    <li><a href=\"#\">Content page 3</a></li>\n");
-      out.write("                    <li><a href=\"#\">Content page 4</a></li>\n");
-      out.write("                    <li><a href=\"#\">Content page 5</a></li>\n");
-      out.write("                    <li><a href=\"#\">Content page 6</a></li>\n");
-      out.write("                </ul> -->\n");
-      out.write("            </div>\n");
-      out.write("            \n");
-      out.write("            \n");
-      out.write("            <div id=\"nav\">\n");
-      out.write("                <div class=\"wrapper\">\n");
-      out.write("                <h3>Actions</h3>\n");
-      out.write("                <ul class=\"clearfix\">\n");
-      out.write("                     <li><a href=\"#\">Minhas Tarefas</a></li>\n");
-      out.write("                     <li><a href=\"#\">Meus Projetos</a></li>\n");
-      out.write("                     <li><a href=\"#\">Contato Gerente</a></li>                     \n");
-      out.write("                     <li class=\"last\"><a href=\"#\">Meu Perfil</a></li>\n");
-      out.write("                </ul>\n");
-      out.write("                </div>\n");
-      out.write("                <hr />\n");
-      out.write("            </div>\n");
-      out.write("        </div>\n");
-      out.write("        \n");
-      out.write("        <div id=\"footer\" class=\"clearfix\">\n");
-      out.write("            Copyright 2021 - Jadson Dev\n");
-      out.write("        </div>\n");
-      out.write("        \n");
-      out.write("    </div>\n");
-      out.write("    \n");
-      out.write("    <div id=\"extra1\">&nbsp;</div>\n");
-      out.write("    <div id=\"extra2\">&nbsp;</div>\n");
-      out.write("</body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("                <hr />\r\n");
+      out.write("            </div>\r\n");
+      out.write("            \r\n");
+      out.write("            <div id=\"local\">\r\n");
+      out.write("            </div>\r\n");
+      out.write("\r\n");
+      out.write("            <div id=\"nav\">\r\n");
+      out.write("                <div class=\"wrapper\">\r\n");
+      out.write("                <h3>Actions</h3>\r\n");
+      out.write("                <ul class=\"clearfix\">\r\n");
+      out.write("                     <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/jsp/project!list.action\">Meus Projetos</a></li>\r\n");
+      out.write("                     <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/jsp/project!iterations.action\">Minhas Iterações</a></li>\r\n");
+      out.write("                     <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/jsp/project!itens.action\">Meus Itens</a></li>\r\n");
+      out.write("                     <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/jsp/project!tasks.action\">Minhas Tarefas</a></li>                     \r\n");
+      out.write("                </ul>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                <hr />\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        \r\n");
+      out.write("        <div id=\"footer\" class=\"clearfix\">\r\n");
+      out.write("            <p>Copyright © 2021 - Jadson Dev</p>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        \r\n");
+      out.write("    </div>\r\n");
+      out.write("    \r\n");
+      out.write("    <div id=\"extra1\">&nbsp;</div>\r\n");
+      out.write("    <div id=\"extra2\">&nbsp;</div>\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -194,6 +214,60 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _jspx_tagPool_s_url_value_nobody.reuse(_jspx_th_s_url_0);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_url_1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_url_1 = (org.apache.struts2.views.jsp.URLTag) _jspx_tagPool_s_url_value_nobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_url_1.setPageContext(_jspx_page_context);
+    _jspx_th_s_url_1.setParent(null);
+    _jspx_th_s_url_1.setValue("/struts/niftycorners/niftyCorners.css");
+    int _jspx_eval_s_url_1 = _jspx_th_s_url_1.doStartTag();
+    if (_jspx_th_s_url_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_url_value_nobody.reuse(_jspx_th_s_url_1);
+      return true;
+    }
+    _jspx_tagPool_s_url_value_nobody.reuse(_jspx_th_s_url_1);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_url_2(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_url_2 = (org.apache.struts2.views.jsp.URLTag) _jspx_tagPool_s_url_value_nobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_url_2.setPageContext(_jspx_page_context);
+    _jspx_th_s_url_2.setParent(null);
+    _jspx_th_s_url_2.setValue("/struts/niftycorners/niftyPrint.css");
+    int _jspx_eval_s_url_2 = _jspx_th_s_url_2.doStartTag();
+    if (_jspx_th_s_url_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_url_value_nobody.reuse(_jspx_th_s_url_2);
+      return true;
+    }
+    _jspx_tagPool_s_url_value_nobody.reuse(_jspx_th_s_url_2);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_url_3(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:url
+    org.apache.struts2.views.jsp.URLTag _jspx_th_s_url_3 = (org.apache.struts2.views.jsp.URLTag) _jspx_tagPool_s_url_value_nobody.get(org.apache.struts2.views.jsp.URLTag.class);
+    _jspx_th_s_url_3.setPageContext(_jspx_page_context);
+    _jspx_th_s_url_3.setParent(null);
+    _jspx_th_s_url_3.setValue("/struts/niftycorners/nifty.js");
+    int _jspx_eval_s_url_3 = _jspx_th_s_url_3.doStartTag();
+    if (_jspx_th_s_url_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_url_value_nobody.reuse(_jspx_th_s_url_3);
+      return true;
+    }
+    _jspx_tagPool_s_url_value_nobody.reuse(_jspx_th_s_url_3);
     return false;
   }
 

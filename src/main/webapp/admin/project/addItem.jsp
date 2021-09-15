@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>:FRASYS: - Add Item</title>
+<title>:Tarefas: - Add Item</title>
 </head>
 <body>
 	<s:form action="project!addItem" namespace="/admin" method="post">

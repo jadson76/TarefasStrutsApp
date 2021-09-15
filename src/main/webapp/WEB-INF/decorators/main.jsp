@@ -7,16 +7,31 @@
 <%@taglib prefix="page" uri="http://www.opensymphony.com/sitemesh/page" %>
 <%@taglib prefix="s" uri="/struts-tags" %>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html lang="en">
 <head>
 	<title><decorator:title default="Tarefas"/></title>
+	
     <link href="<s:url value='/styles/main.css'/>" rel="stylesheet" type="text/css" media="all"/>
+    
+    <link href="<s:url value='/struts/niftycorners/niftyCorners.css'/>" rel="stylesheet" type="text/css"/>
+    <link href="<s:url value='/struts/niftycorners/niftyPrint.css'/>" rel="stylesheet" type="text/css" media="print"/>
+    <script language="JavaScript" type="text/javascript" src="<s:url value='/struts/niftycorners/nifty.js'/>"></script>
+	<script language="JavaScript" type="text/javascript">
+        window.onload = function(){
+            if(!NiftyCheck()) {
+                return;
+            }
+            // perform niftycorners rounding
+            // eg.
+            // Rounded("blockquote","tr bl","#ECF1F9","#CDFFAA","smooth border #88D84F");
+        }
+    </script>
     <decorator:head/>
 </head>
 <body id="page-home">
     <div id="page">
         <div id="header" class="clearfix">
-        	CONTROLE DE TAREFAS
+        	TAREFAS - Task Control System
             <hr />
         </div>
         
@@ -25,31 +40,19 @@
             	<h3><decorator:title default="Tarefas" /></h3>
             	<decorator:body/>
                 <hr />
-            </div>           
-            
-            
-            <div id="local">
-             <!--
-                <h3>Local Nav. Bar</h3>
-                <ul>
-                    <li><a href="#">Content page 1</a></li>
-                    <li><a href="#">Content page 2</a></li>
-                    <li><a href="#">Content page 3</a></li>
-                    <li><a href="#">Content page 4</a></li>
-                    <li><a href="#">Content page 5</a></li>
-                    <li><a href="#">Content page 6</a></li>
-                </ul> -->
             </div>
             
-            
+            <div id="local">
+            </div>
+
             <div id="nav">
                 <div class="wrapper">
                 <h3>Actions</h3>
                 <ul class="clearfix">
-                     <li><a href="#">Minhas Tarefas</a></li>
-                     <li><a href="#">Meus Projetos</a></li>
-                     <li><a href="#">Contato Gerente</a></li>                     
-                     <li class="last"><a href="#">Meu Perfil</a></li>
+                     <li><a href="${pageContext.request.contextPath}/jsp/project!list.action">Meus Projetos</a></li>
+                     <li><a href="${pageContext.request.contextPath}/jsp/project!iterations.action">Minhas Iterações</a></li>
+                     <li><a href="${pageContext.request.contextPath}/jsp/project!itens.action">Meus Itens</a></li>
+                     <li><a href="${pageContext.request.contextPath}/jsp/project!tasks.action">Minhas Tarefas</a></li>                     
                 </ul>
                 </div>
                 <hr />
@@ -57,7 +60,7 @@
         </div>
         
         <div id="footer" class="clearfix">
-            Copyright 2021 - Jadson Dev
+            <p>Copyright © 2021 - Jadson Dev</p>
         </div>
         
     </div>

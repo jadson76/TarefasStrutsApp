@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class listItens_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static java.util.Vector _jspx_dependants;
@@ -12,8 +12,6 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_display_table_sort_requestURI_pagesize_list_id_class_cellspacing_cellpadding;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_display_column_title_property_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_display_column_title_sortable_property_nobody;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_display_column_title_sortable;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_fmt_formatDate_value_dateStyle_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_display_column_title;
 
   private org.apache.jasper.runtime.ResourceInjector _jspx_resourceInjector;
@@ -26,8 +24,6 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
     _jspx_tagPool_display_table_sort_requestURI_pagesize_list_id_class_cellspacing_cellpadding = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_display_column_title_property_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_display_column_title_sortable_property_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _jspx_tagPool_display_column_title_sortable = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _jspx_tagPool_fmt_formatDate_value_dateStyle_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_display_column_title = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
@@ -35,8 +31,6 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
     _jspx_tagPool_display_table_sort_requestURI_pagesize_list_id_class_cellspacing_cellpadding.release();
     _jspx_tagPool_display_column_title_property_nobody.release();
     _jspx_tagPool_display_column_title_sortable_property_nobody.release();
-    _jspx_tagPool_display_column_title_sortable.release();
-    _jspx_tagPool_fmt_formatDate_value_dateStyle_nobody.release();
     _jspx_tagPool_display_column_title.release();
   }
 
@@ -74,51 +68,49 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
 
       out.write("\r\n");
       out.write("\r\n");
-      out.write("\r\n");
       out.write("\n");
       out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n");
       out.write("<html>\n");
       out.write("<head>\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("<title>Projetos</title>\n");
+      out.write("<title>Itens</title>\n");
       out.write("</head>\n");
       out.write("<body>\n");
-      out.write("<div style=\"padding: 10px; padding-left: 20px;\">\r\n");
       out.write("\t");
       //  display:table
       org.displaytag.tags.TableTag _jspx_th_display_table_0 = (org.displaytag.tags.TableTag) _jspx_tagPool_display_table_sort_requestURI_pagesize_list_id_class_cellspacing_cellpadding.get(org.displaytag.tags.TableTag.class);
       _jspx_th_display_table_0.setPageContext(_jspx_page_context);
       _jspx_th_display_table_0.setParent(null);
-      _jspx_th_display_table_0.setList((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${projects}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+      _jspx_th_display_table_0.setList((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${itens}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
       _jspx_th_display_table_0.setClass("defaultTable");
+      _jspx_th_display_table_0.setRequestURI((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}/jsp/project!itens.action", java.lang.String.class, (PageContext)_jspx_page_context, null));
       _jspx_th_display_table_0.setPagesize(5);
-      _jspx_th_display_table_0.setCellspacing("0");
+      _jspx_th_display_table_0.setUid("item");
       _jspx_th_display_table_0.setCellpadding("0");
+      _jspx_th_display_table_0.setCellspacing("0");
       _jspx_th_display_table_0.setSort("list");
-      _jspx_th_display_table_0.setUid("project");
-      _jspx_th_display_table_0.setRequestURI((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}/jsp/project!list.action", java.lang.String.class, (PageContext)_jspx_page_context, null));
       int _jspx_eval_display_table_0 = _jspx_th_display_table_0.doStartTag();
       if (_jspx_eval_display_table_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-        java.lang.Object project = null;
-        java.lang.Integer project_rowNum = null;
+        java.lang.Object item = null;
+        java.lang.Integer item_rowNum = null;
         if (_jspx_eval_display_table_0 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
           out = _jspx_page_context.pushBody();
           _jspx_th_display_table_0.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
           _jspx_th_display_table_0.doInitBody();
         }
-        project = (java.lang.Object) _jspx_page_context.findAttribute("project");
-        project_rowNum = (java.lang.Integer) _jspx_page_context.findAttribute("project_rowNum");
+        item = (java.lang.Object) _jspx_page_context.findAttribute("item");
+        item_rowNum = (java.lang.Integer) _jspx_page_context.findAttribute("item_rowNum");
         do {
           out.write("\r\n");
-          out.write("\t \t");
+          out.write("        ");
           if (_jspx_meth_display_column_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_display_table_0, _jspx_page_context))
             return;
           out.write("\r\n");
-          out.write("\t \t");
+          out.write("        ");
           if (_jspx_meth_display_column_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_display_table_0, _jspx_page_context))
             return;
           out.write("\r\n");
-          out.write("\t \t");
+          out.write("        ");
           if (_jspx_meth_display_column_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_display_table_0, _jspx_page_context))
             return;
           out.write("\r\n");
@@ -130,14 +122,10 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
           if (_jspx_meth_display_column_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_display_table_0, _jspx_page_context))
             return;
           out.write("\r\n");
-          out.write("        ");
-          if (_jspx_meth_display_column_5((javax.servlet.jsp.tagext.JspTag) _jspx_th_display_table_0, _jspx_page_context))
-            return;
-          out.write("\r\n");
-          out.write("\t");
+          out.write("    ");
           int evalDoAfterBody = _jspx_th_display_table_0.doAfterBody();
-          project = (java.lang.Object) _jspx_page_context.findAttribute("project");
-          project_rowNum = (java.lang.Integer) _jspx_page_context.findAttribute("project_rowNum");
+          item = (java.lang.Object) _jspx_page_context.findAttribute("item");
+          item_rowNum = (java.lang.Integer) _jspx_page_context.findAttribute("item_rowNum");
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
         } while (true);
@@ -149,8 +137,7 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
         return;
       }
       _jspx_tagPool_display_table_sort_requestURI_pagesize_list_id_class_cellspacing_cellpadding.reuse(_jspx_th_display_table_0);
-      out.write("\r\n");
-      out.write("</div>\n");
+      out.write("\n");
       out.write("</body>\n");
       out.write("</html>");
     } catch (Throwable t) {
@@ -192,8 +179,8 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
     org.displaytag.tags.ColumnTag _jspx_th_display_column_1 = (org.displaytag.tags.ColumnTag) _jspx_tagPool_display_column_title_property_nobody.get(org.displaytag.tags.ColumnTag.class);
     _jspx_th_display_column_1.setPageContext(_jspx_page_context);
     _jspx_th_display_column_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_display_table_0);
-    _jspx_th_display_column_1.setTitle("Nome");
-    _jspx_th_display_column_1.setProperty("name");
+    _jspx_th_display_column_1.setTitle("Descrição");
+    _jspx_th_display_column_1.setProperty("description");
     int _jspx_eval_display_column_1 = _jspx_th_display_column_1.doStartTag();
     if (_jspx_th_display_column_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_display_column_title_property_nobody.reuse(_jspx_th_display_column_1);
@@ -211,8 +198,8 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
     org.displaytag.tags.ColumnTag _jspx_th_display_column_2 = (org.displaytag.tags.ColumnTag) _jspx_tagPool_display_column_title_sortable_property_nobody.get(org.displaytag.tags.ColumnTag.class);
     _jspx_th_display_column_2.setPageContext(_jspx_page_context);
     _jspx_th_display_column_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_display_table_0);
-    _jspx_th_display_column_2.setTitle("Descrição");
-    _jspx_th_display_column_2.setProperty("description");
+    _jspx_th_display_column_2.setTitle("Prioridade");
+    _jspx_th_display_column_2.setProperty("priority");
     _jspx_th_display_column_2.setSortable(true);
     int _jspx_eval_display_column_2 = _jspx_th_display_column_2.doStartTag();
     if (_jspx_th_display_column_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -231,8 +218,8 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
     org.displaytag.tags.ColumnTag _jspx_th_display_column_3 = (org.displaytag.tags.ColumnTag) _jspx_tagPool_display_column_title_sortable_property_nobody.get(org.displaytag.tags.ColumnTag.class);
     _jspx_th_display_column_3.setPageContext(_jspx_page_context);
     _jspx_th_display_column_3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_display_table_0);
-    _jspx_th_display_column_3.setTitle("Local");
-    _jspx_th_display_column_3.setProperty("location");
+    _jspx_th_display_column_3.setTitle("Iteration");
+    _jspx_th_display_column_3.setProperty("iteration.name");
     _jspx_th_display_column_3.setSortable(true);
     int _jspx_eval_display_column_3 = _jspx_th_display_column_3.doStartTag();
     if (_jspx_th_display_column_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -248,11 +235,10 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  display:column
-    org.displaytag.tags.ColumnTag _jspx_th_display_column_4 = (org.displaytag.tags.ColumnTag) _jspx_tagPool_display_column_title_sortable.get(org.displaytag.tags.ColumnTag.class);
+    org.displaytag.tags.ColumnTag _jspx_th_display_column_4 = (org.displaytag.tags.ColumnTag) _jspx_tagPool_display_column_title.get(org.displaytag.tags.ColumnTag.class);
     _jspx_th_display_column_4.setPageContext(_jspx_page_context);
     _jspx_th_display_column_4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_display_table_0);
-    _jspx_th_display_column_4.setTitle("Deadline");
-    _jspx_th_display_column_4.setSortable(true);
+    _jspx_th_display_column_4.setTitle("Edit");
     int _jspx_eval_display_column_4 = _jspx_th_display_column_4.doStartTag();
     if (_jspx_eval_display_column_4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       if (_jspx_eval_display_column_4 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
@@ -262,10 +248,17 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
       }
       do {
         out.write("\r\n");
-        out.write("        \t");
-        if (_jspx_meth_fmt_formatDate_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_display_column_4, _jspx_page_context))
-          return true;
-        out.write("\r\n");
+        out.write("            <a href=\"");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+        out.write("/jsp/project!show.action?project.id=");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${item.iteration.project.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+        out.write("&iteration.id=");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${item.iteration.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+        out.write("&item.id=");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${item.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+        out.write("\">\r\n");
+        out.write("                Edit\r\n");
+        out.write("            </a>\r\n");
         out.write("        ");
         int evalDoAfterBody = _jspx_th_display_column_4.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -275,68 +268,10 @@ public final class listProjects_jsp extends org.apache.jasper.runtime.HttpJspBas
         out = _jspx_page_context.popBody();
     }
     if (_jspx_th_display_column_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_display_column_title_sortable.reuse(_jspx_th_display_column_4);
+      _jspx_tagPool_display_column_title.reuse(_jspx_th_display_column_4);
       return true;
     }
-    _jspx_tagPool_display_column_title_sortable.reuse(_jspx_th_display_column_4);
-    return false;
-  }
-
-  private boolean _jspx_meth_fmt_formatDate_0(javax.servlet.jsp.tagext.JspTag _jspx_th_display_column_4, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  fmt:formatDate
-    org.apache.taglibs.standard.tag.rt.fmt.FormatDateTag _jspx_th_fmt_formatDate_0 = (org.apache.taglibs.standard.tag.rt.fmt.FormatDateTag) _jspx_tagPool_fmt_formatDate_value_dateStyle_nobody.get(org.apache.taglibs.standard.tag.rt.fmt.FormatDateTag.class);
-    _jspx_th_fmt_formatDate_0.setPageContext(_jspx_page_context);
-    _jspx_th_fmt_formatDate_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_display_column_4);
-    _jspx_th_fmt_formatDate_0.setValue((java.util.Date) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${project.lastDate}", java.util.Date.class, (PageContext)_jspx_page_context, null));
-    _jspx_th_fmt_formatDate_0.setDateStyle("long");
-    int _jspx_eval_fmt_formatDate_0 = _jspx_th_fmt_formatDate_0.doStartTag();
-    if (_jspx_th_fmt_formatDate_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_fmt_formatDate_value_dateStyle_nobody.reuse(_jspx_th_fmt_formatDate_0);
-      return true;
-    }
-    _jspx_tagPool_fmt_formatDate_value_dateStyle_nobody.reuse(_jspx_th_fmt_formatDate_0);
-    return false;
-  }
-
-  private boolean _jspx_meth_display_column_5(javax.servlet.jsp.tagext.JspTag _jspx_th_display_table_0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  display:column
-    org.displaytag.tags.ColumnTag _jspx_th_display_column_5 = (org.displaytag.tags.ColumnTag) _jspx_tagPool_display_column_title.get(org.displaytag.tags.ColumnTag.class);
-    _jspx_th_display_column_5.setPageContext(_jspx_page_context);
-    _jspx_th_display_column_5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_display_table_0);
-    _jspx_th_display_column_5.setTitle("Exibir");
-    int _jspx_eval_display_column_5 = _jspx_th_display_column_5.doStartTag();
-    if (_jspx_eval_display_column_5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      if (_jspx_eval_display_column_5 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
-        out = _jspx_page_context.pushBody();
-        _jspx_th_display_column_5.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
-        _jspx_th_display_column_5.doInitBody();
-      }
-      do {
-        out.write("\r\n");
-        out.write("        \t<a href=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-        out.write("/jsp/project!show.action?project.id=");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${project.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-        out.write("\">Show</a>\r\n");
-        out.write("        ");
-        int evalDoAfterBody = _jspx_th_display_column_5.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-      if (_jspx_eval_display_column_5 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE)
-        out = _jspx_page_context.popBody();
-    }
-    if (_jspx_th_display_column_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_display_column_title.reuse(_jspx_th_display_column_5);
-      return true;
-    }
-    _jspx_tagPool_display_column_title.reuse(_jspx_th_display_column_5);
+    _jspx_tagPool_display_column_title.reuse(_jspx_th_display_column_4);
     return false;
   }
 }
