@@ -8,9 +8,24 @@
     <constant name="struts.devMode" value="true"/>
     <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
 
-    <package name="tarefasDefault" extends="struts-default">      
-     
+    <package name="tarefasDefault" extends="struts-default" namespace="/jsp">      
+     	<action name="project!*" method="{1}" class="project">
+			<result name="show">/jsp/projectDetails.jsp</result>
+			<result name="showIteration">/jsp/iterationDetails.jsp</result>
+			<result name="showItem">/jsp/itemDetails.jsp</result>
+			<result name="showTask">/jsp/taskDetails.jsp</result>
+			<result name="list">/jsp/listProjects.jsp</result>
+			<result name="listIterations">/jsp/listIterations.jsp</result>
+			<result name="listItens">/jsp/listItens.jsp</result>
+			<result name="listTasks">/jsp/listTasks.jsp</result>
+		</action>	
      </package>
+     
+     <package name="tarefasAjaxCalls" extends="struts-default" namespace="/ajax">
+		<action name="project!*" method="{1}" class="project">
+			<result name="list">/jsp/listProjects.jsp</result>
+		</action>				
+	</package>
      
      <package name="model" extends="struts-default" namespace="/admin">  
      

@@ -71,7 +71,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\r\n");
-      out.write("<title>Admin Page</title>\r\n");
+      out.write("<title>Pagina Admin</title>\r\n");
       if (_jspx_meth_s_head_0(_jspx_page_context))
         return;
       out.write("\r\n");

@@ -48,7 +48,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       }
 
       out.write('\n');
- response.sendRedirect("/tarefas/login.jsp"); 
+ response.sendRedirect("/tarefas/jsp/home.jsp"); 
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

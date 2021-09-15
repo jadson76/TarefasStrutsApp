@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class addIteration_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static java.util.Vector _jspx_dependants;
@@ -12,7 +12,7 @@ public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_head_theme_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_form_namespace_method_action;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_textfield_key_nobody;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_datetimepicker_theme_name_label_displayFormat_nobody;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_datetimepicker_name_key_displayFormat_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_submit_key_nobody;
 
   private org.apache.jasper.runtime.ResourceInjector _jspx_resourceInjector;
@@ -25,7 +25,7 @@ public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_tagPool_s_head_theme_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_form_namespace_method_action = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_textfield_key_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _jspx_tagPool_s_datetimepicker_theme_name_label_displayFormat_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_s_datetimepicker_name_key_displayFormat_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_s_submit_key_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
@@ -33,7 +33,7 @@ public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_tagPool_s_head_theme_nobody.release();
     _jspx_tagPool_s_form_namespace_method_action.release();
     _jspx_tagPool_s_textfield_key_nobody.release();
-    _jspx_tagPool_s_datetimepicker_theme_name_label_displayFormat_nobody.release();
+    _jspx_tagPool_s_datetimepicker_name_key_displayFormat_nobody.release();
     _jspx_tagPool_s_submit_key_nobody.release();
   }
 
@@ -53,7 +53,7 @@ public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
 
     try {
       _jspxFactory = JspFactory.getDefaultFactory();
-      response.setContentType("text/html; charset=ISO-8859-1");
+      response.setContentType("text/html;charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -69,24 +69,21 @@ public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_resourceInjector.setContext(application);
       }
 
-      out.write("\n");
-      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
+      out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
       if (_jspx_meth_s_head_0(_jspx_page_context))
         return;
-      out.write("\r\n");
       out.write("\n");
       out.write("<html>\n");
       out.write("<head>\n");
-      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n");
-      out.write("<title>:FRASYS: - Create Project</title>\n");
+      out.write("<title>:Tarefas: - Adicionar Iteração do Projeto</title>\n");
       out.write("</head>\n");
-      out.write("<body>\n");
+      out.write("<body>\r\n");
       out.write("\t");
       if (_jspx_meth_s_form_0(_jspx_page_context))
         return;
-      out.write("\n");
+      out.write("\t\n");
       out.write("</body>\n");
       out.write("</html>");
     } catch (Throwable t) {
@@ -127,7 +124,7 @@ public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.ui.FormTag _jspx_th_s_form_0 = (org.apache.struts2.views.jsp.ui.FormTag) _jspx_tagPool_s_form_namespace_method_action.get(org.apache.struts2.views.jsp.ui.FormTag.class);
     _jspx_th_s_form_0.setPageContext(_jspx_page_context);
     _jspx_th_s_form_0.setParent(null);
-    _jspx_th_s_form_0.setAction("project!add");
+    _jspx_th_s_form_0.setAction("project!addIteration");
     _jspx_th_s_form_0.setNamespace("/admin");
     _jspx_th_s_form_0.setMethod("post");
     int _jspx_eval_s_form_0 = _jspx_th_s_form_0.doStartTag();
@@ -144,21 +141,20 @@ public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
           return true;
         out.write("\r\n");
         out.write("\t\t");
-        if (_jspx_meth_s_textfield_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
-          return true;
-        out.write("\r\n");
-        out.write("        ");
         if (_jspx_meth_s_datetimepicker_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
           return true;
         out.write("\r\n");
-        out.write("        ");
-        if (_jspx_meth_s_textfield_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
+        out.write("\t\t");
+        if (_jspx_meth_s_datetimepicker_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
           return true;
         out.write("\r\n");
-        out.write("        ");
+        out.write("\t    ");
         if (_jspx_meth_s_submit_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_form_0, _jspx_page_context))
           return true;
         out.write("\r\n");
+        out.write("\t    <input type=\"hidden\" name=\"project.id\" value=\"");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${empty project.id ? param.project : project.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+        out.write("\" />\r\n");
         out.write("\t");
         int evalDoAfterBody = _jspx_th_s_form_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -183,7 +179,7 @@ public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_textfield_0 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _jspx_tagPool_s_textfield_key_nobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
     _jspx_th_s_textfield_0.setPageContext(_jspx_page_context);
     _jspx_th_s_textfield_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
-    _jspx_th_s_textfield_0.setKey("project.name");
+    _jspx_th_s_textfield_0.setKey("iteration.name");
     int _jspx_eval_s_textfield_0 = _jspx_th_s_textfield_0.doStartTag();
     if (_jspx_th_s_textfield_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_textfield_key_nobody.reuse(_jspx_th_s_textfield_0);
@@ -193,60 +189,43 @@ public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
-  private boolean _jspx_meth_s_textfield_1(javax.servlet.jsp.tagext.JspTag _jspx_th_s_form_0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:textfield
-    org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_textfield_1 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _jspx_tagPool_s_textfield_key_nobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
-    _jspx_th_s_textfield_1.setPageContext(_jspx_page_context);
-    _jspx_th_s_textfield_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
-    _jspx_th_s_textfield_1.setKey("project.description");
-    int _jspx_eval_s_textfield_1 = _jspx_th_s_textfield_1.doStartTag();
-    if (_jspx_th_s_textfield_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_textfield_key_nobody.reuse(_jspx_th_s_textfield_1);
-      return true;
-    }
-    _jspx_tagPool_s_textfield_key_nobody.reuse(_jspx_th_s_textfield_1);
-    return false;
-  }
-
   private boolean _jspx_meth_s_datetimepicker_0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_form_0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  s:datetimepicker
-    org.apache.struts2.views.jsp.ui.DateTimePickerTag _jspx_th_s_datetimepicker_0 = (org.apache.struts2.views.jsp.ui.DateTimePickerTag) _jspx_tagPool_s_datetimepicker_theme_name_label_displayFormat_nobody.get(org.apache.struts2.views.jsp.ui.DateTimePickerTag.class);
+    org.apache.struts2.views.jsp.ui.DateTimePickerTag _jspx_th_s_datetimepicker_0 = (org.apache.struts2.views.jsp.ui.DateTimePickerTag) _jspx_tagPool_s_datetimepicker_name_key_displayFormat_nobody.get(org.apache.struts2.views.jsp.ui.DateTimePickerTag.class);
     _jspx_th_s_datetimepicker_0.setPageContext(_jspx_page_context);
     _jspx_th_s_datetimepicker_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
-    _jspx_th_s_datetimepicker_0.setLabel("%{getText('project.lastdate')}");
-    _jspx_th_s_datetimepicker_0.setName("lastDate");
+    _jspx_th_s_datetimepicker_0.setKey("iteration.startDate");
     _jspx_th_s_datetimepicker_0.setDisplayFormat("dd/MM/yyyy");
-    _jspx_th_s_datetimepicker_0.setTheme("ajax");
+    _jspx_th_s_datetimepicker_0.setName("startDate");
     int _jspx_eval_s_datetimepicker_0 = _jspx_th_s_datetimepicker_0.doStartTag();
     if (_jspx_th_s_datetimepicker_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_datetimepicker_theme_name_label_displayFormat_nobody.reuse(_jspx_th_s_datetimepicker_0);
+      _jspx_tagPool_s_datetimepicker_name_key_displayFormat_nobody.reuse(_jspx_th_s_datetimepicker_0);
       return true;
     }
-    _jspx_tagPool_s_datetimepicker_theme_name_label_displayFormat_nobody.reuse(_jspx_th_s_datetimepicker_0);
+    _jspx_tagPool_s_datetimepicker_name_key_displayFormat_nobody.reuse(_jspx_th_s_datetimepicker_0);
     return false;
   }
 
-  private boolean _jspx_meth_s_textfield_2(javax.servlet.jsp.tagext.JspTag _jspx_th_s_form_0, PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_datetimepicker_1(javax.servlet.jsp.tagext.JspTag _jspx_th_s_form_0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
-    //  s:textfield
-    org.apache.struts2.views.jsp.ui.TextFieldTag _jspx_th_s_textfield_2 = (org.apache.struts2.views.jsp.ui.TextFieldTag) _jspx_tagPool_s_textfield_key_nobody.get(org.apache.struts2.views.jsp.ui.TextFieldTag.class);
-    _jspx_th_s_textfield_2.setPageContext(_jspx_page_context);
-    _jspx_th_s_textfield_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
-    _jspx_th_s_textfield_2.setKey("project.location");
-    int _jspx_eval_s_textfield_2 = _jspx_th_s_textfield_2.doStartTag();
-    if (_jspx_th_s_textfield_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_textfield_key_nobody.reuse(_jspx_th_s_textfield_2);
+    //  s:datetimepicker
+    org.apache.struts2.views.jsp.ui.DateTimePickerTag _jspx_th_s_datetimepicker_1 = (org.apache.struts2.views.jsp.ui.DateTimePickerTag) _jspx_tagPool_s_datetimepicker_name_key_displayFormat_nobody.get(org.apache.struts2.views.jsp.ui.DateTimePickerTag.class);
+    _jspx_th_s_datetimepicker_1.setPageContext(_jspx_page_context);
+    _jspx_th_s_datetimepicker_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
+    _jspx_th_s_datetimepicker_1.setKey("iteration.endDate");
+    _jspx_th_s_datetimepicker_1.setDisplayFormat("dd/MM/yyyy");
+    _jspx_th_s_datetimepicker_1.setName("endDate");
+    int _jspx_eval_s_datetimepicker_1 = _jspx_th_s_datetimepicker_1.doStartTag();
+    if (_jspx_th_s_datetimepicker_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_datetimepicker_name_key_displayFormat_nobody.reuse(_jspx_th_s_datetimepicker_1);
       return true;
     }
-    _jspx_tagPool_s_textfield_key_nobody.reuse(_jspx_th_s_textfield_2);
+    _jspx_tagPool_s_datetimepicker_name_key_displayFormat_nobody.reuse(_jspx_th_s_datetimepicker_1);
     return false;
   }
 
@@ -258,7 +237,7 @@ public final class create_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.ui.SubmitTag _jspx_th_s_submit_0 = (org.apache.struts2.views.jsp.ui.SubmitTag) _jspx_tagPool_s_submit_key_nobody.get(org.apache.struts2.views.jsp.ui.SubmitTag.class);
     _jspx_th_s_submit_0.setPageContext(_jspx_page_context);
     _jspx_th_s_submit_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_form_0);
-    _jspx_th_s_submit_0.setKey("project.add");
+    _jspx_th_s_submit_0.setKey("iteration.add");
     int _jspx_eval_s_submit_0 = _jspx_th_s_submit_0.doStartTag();
     if (_jspx_th_s_submit_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_submit_key_nobody.reuse(_jspx_th_s_submit_0);

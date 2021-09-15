@@ -6,9 +6,12 @@
 
 <html lang="en">
 <head>
-	<title>Pagina Inicial</title>	
+	<title>Tarefas - Inicio</title>
+	<s:head theme="ajax" />
 </head>
 <body>
-	Bem-vindo!!!<s:property value="name"/><br>
+	<s:url id="projectListURL" action="project!list" namespace="/ajax"/>
+	<s:div href="%{projectListURL}" theme="ajax" errorText="An error ocurred!!!" loadingText="Loading Projects List!">
+	</s:div>
 </body>
 </html>

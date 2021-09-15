@@ -11,7 +11,7 @@
 </head>
 <body>
 	<s:form action="j_security_check">
-		<s:textfield label="Id do Usuario" name="j_username" />
+		<s:textfield label="Login do Usuario" name="j_username" />
 		<s:password label="Password" name="j_password" />
 		<s:submit />
 	</s:form>

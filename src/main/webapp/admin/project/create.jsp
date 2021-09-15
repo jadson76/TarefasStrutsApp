@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>:TAREFAS - Crisção de Projetos</title>
+<title>:FRASYS: - Create Project</title>
 </head>
 <body>
 	<s:form action="project!add" namespace="/admin" method="post">
