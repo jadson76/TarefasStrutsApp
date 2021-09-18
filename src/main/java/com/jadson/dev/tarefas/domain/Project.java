@@ -108,5 +108,18 @@ public class Project implements Serializable {
         task.setItem(item);
         item.addTask(task);
 	}
-
+	
+	public void updateTaskTo(Iteration iter, Item item, Task task) throws Exception {
+		iter = iteration(iter.getId());
+        if (iter == null)
+            throw new Exception("Iteration does not exist!");
+        item = iter.item(item.getId());
+        if (item == null)
+            throw new Exception("Item does not exist!");
+        for(Task t : item.getTasks()) {
+        	if(t.getId() == task.getId()) {
+        		t = task;
+        	}
+        }
+	}
 }

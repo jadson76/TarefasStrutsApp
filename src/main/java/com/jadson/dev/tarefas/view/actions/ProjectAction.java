@@ -127,6 +127,18 @@ public class ProjectAction {
 		project = repository.save(project);
 		return "success";
 	}
+	
+	public String concludeTask() throws Exception {
+		project = repository.withId(project.getId());
+		iteration = project.iteration(iteration.getId());
+		item = iteration.item(item.getId());
+		task = item.task(task.getId());		
+		task.setStatus(Status.DONE);
+		project.updateTaskTo(iteration, item, task);
+		project = repository.save(project);
+		tasks = repository.allTasks();
+		return "concludeTask";
+	}
 
 	private Date parseDate(String source) {
 		Date date;

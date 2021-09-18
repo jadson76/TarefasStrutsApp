@@ -18,6 +18,7 @@
 			<result name="listIterations">/jsp/listIterations.jsp</result>
 			<result name="listItens">/jsp/listItens.jsp</result>
 			<result name="listTasks">/jsp/listTasks.jsp</result>
+			<result name="concludeTask">/jsp/itemDetails.jsp</result>
 		</action>	
      </package>
      

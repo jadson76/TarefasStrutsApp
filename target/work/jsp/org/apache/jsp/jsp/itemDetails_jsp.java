@@ -99,7 +99,7 @@ public final class itemDetails_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    ");
       if (_jspx_meth_s_if_0(_jspx_page_context))
         return;
-      out.write("\r\n");
+      out.write(" \r\n");
       out.write("    ");
       if (_jspx_meth_s_if_1(_jspx_page_context))
         return;
@@ -259,7 +259,7 @@ public final class itemDetails_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${item.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
         out.write("\">\r\n");
         out.write("            <button>Adicionar Task</button>\r\n");
-        out.write("        </a>\r\n");
+        out.write("        </a>      \r\n");
         out.write("    ");
         int evalDoAfterBody = _jspx_th_s_if_0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

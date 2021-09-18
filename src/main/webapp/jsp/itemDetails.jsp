@@ -16,8 +16,8 @@
     <s:if test="%{isUser('MANAGER') || isUser('ADMIN')}">
         <a href="${pageContext.request.contextPath}/admin/project/addTask.jsp?project=${item.iteration.project.id}&iteration=${item.iteration.id}&item=${item.id}">
             <button>Adicionar Task</button>
-        </a>
-    </s:if>
+        </a>      
+    </s:if> 
     <s:if test="%{isUser('MANAGER') || isUser('RESOURCE') || isUser('CLIENT')}">
        <a href="#"><button>Adicionar Comentário</button></a>
     </s:if>
